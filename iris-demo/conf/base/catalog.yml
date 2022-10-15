@@ -1,0 +1,63 @@
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+# link: https://kedro-mlflow.readthedocs.io/en/stable/source/04_experimentation_tracking/03_version_datasets.html#what-is-artifact-tracking
+
+irir_data:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: pandas.CSVDataSet
+        filepath: data/05_model_input/iris.csv
+
+
+logistic_model_v1:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: kedro_mlflow.io.models.MlflowModelSaverDataSet
+        flavor: mlflow.sklearn
+        filepath: data/06_models/logistic_model_v1.pickle
+  # type: pickle.PickleDataSet
+  # filepath: data/06_models/logistic_model_v1.pickle
+  # versioned: true
+
+
+X_train:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: pandas.ParquetDataSet
+        filepath: data/05_model_input/X_train.parquet
+
+X_test:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: pandas.ParquetDataSet
+        filepath: data/05_model_input/X_test.parquet
+
+y_train:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: pandas.ParquetDataSet
+        filepath: data/05_model_input/y_train.parquet
+
+y_test:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: pandas.ParquetDataSet
+        filepath: data/05_model_input/y_test.parquet
+
+
+# metrics
+metric_info:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: json.JSONDataSet
+        filepath: data/08_reporting/metric_info.json
+
+
+metric_pics:
+    type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+    data_set:
+        type: matplotlib.MatplotlibWriter
+        filepath: data/08_reporting/metric_pics
+
+
+

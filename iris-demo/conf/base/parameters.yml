@@ -1,0 +1,10 @@
+model_options:
+  test_size: 0.2
+  random_state: 66
+  features:
+    - sepal_length
+    - sepal_width
+    - petal_length
+    - petal_width
+  target: 
+    - target

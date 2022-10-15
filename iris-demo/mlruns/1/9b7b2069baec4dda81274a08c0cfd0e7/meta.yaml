@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/Python_data/kedro_demo/iris-demo/mlruns/1/9b7b2069baec4dda81274a08c0cfd0e7/artifacts
+deleted_time: 1665818064709
+end_time: 1665811628663
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+name: ''
+run_id: 9b7b2069baec4dda81274a08c0cfd0e7
+run_uuid: 9b7b2069baec4dda81274a08c0cfd0e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1665811628364
+status: 3
+tags: []
+user_id: '29629'

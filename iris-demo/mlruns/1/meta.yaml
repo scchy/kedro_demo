@@ -1,0 +1,6 @@
+artifact_location: file:///D:/Python_data/kedro_demo/iris-demo/mlruns/1
+creation_time: 1665811469945
+experiment_id: '1'
+last_update_time: 1665811469945
+lifecycle_stage: active
+name: iris_demo
